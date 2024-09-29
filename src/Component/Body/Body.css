@@ -1,0 +1,82 @@
+.bodys {
+    height: 100vh;
+    width: auto;
+    background: linear-gradient( to bottom, #EAD8B1, #001F3F);
+    box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+#flow {
+    padding: 10px;
+}
+
+#headA {
+    animation: moves 10s linear infinite;
+    color: whitesmoke;
+}
+
+#headB {
+    animation: moves 6s linear infinite;
+    color: whitesmoke;
+}
+
+@keyframes moves {
+    0% {
+        transform: translateX(100%);
+        color: gray;
+    }
+    100% {
+        transform: translateX(-100%);
+        color: black;
+    }
+}
+
+.bodymain {
+    height: 500px;
+    width: 700px;
+    background-color: #3A6D8C;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.bodymains {
+    height: 500px;
+    width: 400px;
+    background-color: #78B7D0;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.bodyss {
+    display: flex;
+    justify-content: center;
+}
+
+#ask {
+    display: flex;
+    justify-content: left;
+    margin-left: 4vh;
+}
+
+#para {
+    font-size: 20px;
+    overflow: auto;
+    height: 350px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#side {
+    margin: 10px;
+    border-radius: 10px;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(15, 1, 1, 45deg);
+    }
+    100% {
+        transform: rotate3d(15, 1, 1, -45deg);
+    }
+}
